@@ -1,9 +1,11 @@
 
-# Ask for the user unput
+# Ask for the user input
 userNum = input("Tell me a number ")
 
 # convert to float 
 userNum = float(userNum)
 
-# Do the doubling
-print("Double that is {}.".format(userNum * 2))
+# Do the computation
+for i in range(2,10):
+	answer = userNum * i
+	print("{} times {} is {}.".format(userNum, i , answer))
